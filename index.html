@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bystander</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="stage">
+  <div id="film">
+    <video id="vA" src="media/first_time_scene.mp4" preload="auto" playsinline></video>
+    <video id="vR" src="media/first_time_rewind.mp4" preload="auto" muted playsinline></video>
+    <video id="vR2" class="ghost" src="media/first_time_rewind.mp4" preload="auto" muted playsinline></video>
+    <video id="vB" src="media/second_time_scene.mp4" preload="auto" playsinline></video>
+  </div>
+  <div id="vhs">
+    <canvas id="noise" width="240" height="135"></canvas>
+    <div class="scan"></div>
+    <div class="band"></div>
+    <div class="osd">&#9664;&#9664;</div>
+  </div>
+  <canvas id="canvas"></canvas>
+  <div id="dom">
+    <div id="title">What if…</div>
+    <div id="caption"></div>
+    <div id="labels"></div>
+    <div id="tree"></div>
+    <div id="talk"></div>
+    <div id="card"></div>
+    <div id="endcard">
+      <div class="big">AI never decides.</div>
+      <div class="small">It helps you and the app understand each other.</div>
+    </div>
+    <img id="icon" src="media/icon.png" alt="">
+    <div id="brand">
+      <div class="name">Bystander</div>
+      <!-- The line under the name on the last screen. -->
+      <div class="tag">Anyone can help.</div>
+    </div>
+  </div>
+  <div id="black"></div>
+</div>
+<div id="blackout"></div>
+<div id="start"><div class="dot"></div></div>
+<div id="hud"></div>
+<img id="chestStill" src="media/chest-still.jpg" alt="" hidden>
+
+<script src="js/voice-data.js"></script>
+<script src="js/core.js"></script>
+<script src="js/sound.js"></script>
+<script src="js/monitor.js"></script>
+<script src="js/sketch.js"></script>
+<script src="js/band.js"></script>
+<script src="js/tree.js"></script>
+<script src="js/acts.js"></script>
+</body>
+</html>
